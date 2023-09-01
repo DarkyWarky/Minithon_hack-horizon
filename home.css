@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:rgb(223, 28, 28);
+    --secondary-color:blue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+}
+.btn {
+
+}
+#login,#signup{
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+nav h1{
+    font-size: 40px;
+}
