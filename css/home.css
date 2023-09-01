@@ -39,7 +39,6 @@ nav h1{
 .search{
     background-color:var(--primary-color);
     width: auto;
-
 }
 .search ul{
     display: flex;
@@ -47,6 +46,18 @@ nav h1{
 }
 .search ul li{
     list-style: none;
-    
-    
 }
+.tag{
+    background-color: red;
+}
+.tag h1{
+    text-align: center;
+    color: var(--secondary-color);
+}
+.Explore {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+
