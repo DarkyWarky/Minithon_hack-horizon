@@ -42,5 +42,36 @@ const robotParts = [
       photo: "https://example.com/servo-motor.jpg"
     }
   ];
+  const menuItemsContainer = document.getElementById("menuItems");
+  const categoryButtons = document.querySelectorAll(".heading header button");
   
+  function displayItems(items) {
+    const itemElements = items.map((item) => {
+      return `
+        <div class="item">
+          <h1>${item.name}</h1>
+          <p>${item.description}</p>
+          <p>Price: $${item.price.toFixed(2)}</p>
+        </div>`;
+    });
+    menuItemsContainer.innerHTML = itemElements.join("");
+  }
   
+  function filterItems(category) {
+    if (category === "All") {
+      displayItems(robotParts);
+    } else {
+      const filteredItems = robotParts.filter((item) => item.category === category);
+      displayItems(filteredItems);
+    }
+  }
+  
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.id;
+      filterItems(category);
+    });
+  });
+  displayItems(robotParts);
+  
+  ½
