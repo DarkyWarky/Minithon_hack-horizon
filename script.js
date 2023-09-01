@@ -73,5 +73,3 @@ const robotParts = [
     });
   });
   displayItems(robotParts);
-  
-  ½
