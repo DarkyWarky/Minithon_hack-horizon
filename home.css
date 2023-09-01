@@ -7,13 +7,15 @@
     --primary-color:rgb(223, 28, 28);
     --secondary-color:blue;
 }
+
+/* Navigation */
 nav{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     background-color: var(--primary-color);
-    height: 50px;
+    height: 70px;
 }
 .btn {
 
@@ -32,3 +34,7 @@ nav{
 nav h1{
     font-size: 40px;
 }
+
+/* Searchbar */
+
+
