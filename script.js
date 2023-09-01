@@ -11,7 +11,7 @@ const robotParts = [
       category: "Mechanical",
       price: 39.95,
       description: "High-torque motors for robot movement and mobility.",
-      photo: "https://example.com/motor-kit.jpg"
+      photo: ""
     },
     {
       name: "Ultrasonic Sensor",
@@ -25,7 +25,7 @@ const robotParts = [
       category: "Electronic",
       price: 45.99,
       description: "Captures images and videos for robot vision.",
-      photo: "https://example.com/camera-module.jpg"
+      photo: ""
     },
     {
       name: "Robotics Starter Kit",
@@ -42,8 +42,10 @@ const robotParts = [
       photo: "https://example.com/servo-motor.jpg"
     }
   ];
+  
   const menuItemsContainer = document.getElementById("menuItems");
   const categoryButtons = document.querySelectorAll(".heading header button");
+  const menuContainer = document.querySelector(".menu"); // Add this line to select the menu container
   
   function displayItems(items) {
     const itemElements = items.map((item) => {
@@ -54,6 +56,8 @@ const robotParts = [
           <p>Price: $${item.price.toFixed(2)}</p>
         </div>`;
     });
+  
+    menuContainer.style.backgroundImage = `url('${items[0].photo}')`; // Set the background image based on the first item
     menuItemsContainer.innerHTML = itemElements.join("");
   }
   
@@ -72,6 +76,6 @@ const robotParts = [
       filterItems(category);
     });
   });
-  displayItems(robotParts);
   
+  displayItems(robotParts);
   
