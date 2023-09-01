@@ -26,6 +26,8 @@ nav{
     outline: none;
     border: none;
     border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
 nav h1{
     font-size: 40px;
