@@ -10,219 +10,310 @@
 }
 
 /* Navigation */
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    background-color: var(--primary-color);
-    height: 60px;
+body{
+    background-image: url("https://img.freepik.com/free-vector/combination-circuit-head-shape-artificial-intelligence-moral-electronic-world-illustration_456031-123.jpg?w=1380&t=st=1693542980~exp=1693543580~hmac=0a0f8e011f3834f342312bd05d20840e9dda8f9186844ae66f5752e6c4d179e2");
 }
-.btn {
 
-}
-#login,#signup{
-    background-color: var(--secondary-color);
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
+/* items */
+.item {
     text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 80%;
+    height: 350px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
-nav h1{
+
+.menuItems {
+    background-color: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.menu {
+    background-color: none;
+    margin: 0px 20px;
+}
+.item h1{
     font-size: 40px;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(7,60,155,1) 64%, rgba(0,212,255,1) 91%);
+    -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+    background-clip: text;
+    color: transparent; /* Hide the actual text color */
+    margin-top: 30px;
 }
-
-
-.button {
-    position: relative;
-    overflow: hidden;
-    height: 3rem;
-    padding: 0 2rem;
-    border-radius: 1.5rem;
-    background: #3d3a4e;
-    background-size: 400%;
-    color: #fff;
-    border: none;
-    width: 200px;
-  }
-  
-  .button:hover::before {
-    transform: scaleX(1);
-  }
-  
-  .button-content {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: linear-gradient(
-      82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%
-    );
-    transition: all 0.475s;
-  }
-.btn-select {
-    display: flex;
-    justify-content: space-evenly;
+.item p{
+    margin-top: 30px;
 }
-
-
-
-
-/* PRODUCTS */
-.card {
-    width: 230px;
-    border-radius: 20px;
-    background: #1b233d;
-    padding: 5px;
-    overflow: hidden;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card .top-section {
-    height: 150px;
-    border-radius: 15px;
+.heading {
+    position: relative;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
-    position: relative;
-  }
-  
-  .card .top-section .border {
-    border-bottom-right-radius: 10px;
-    height: 30px;
-    width: 130px;
-    background: white;
-    background: #1b233d;
-    position: relative;
-    transform: skew(-40deg);
-    box-shadow: -10px -10px 0 0 #1b233d;
-  }
-  
-  .card .top-section .border::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 0;
-    right: -15px;
-    background: rgba(255, 255, 255, 0);
-    border-top-left-radius: 10px;
-    box-shadow: -5px -5px 0 2px #1b233d;
-  }
-  
-  .card .top-section::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background: rgba(255, 255, 255, 0);
-    height: 15px;
-    width: 15px;
-    border-top-left-radius: 15px;
-    box-shadow: -5px -5px 0 2px #1b233d;
-  }
-  
-  .card .top-section .icons {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .card .top-section .icons .logo {
-    height: 100%;
-    aspect-ratio: 1;
-    padding: 7px 0 7px 15px;
-  }
-  
-  .card .top-section .icons .logo .top-section {
-    height: 100%;
-  }
-  
-  .card .top-section .icons .social-media {
-    height: 100%;
-    padding: 8px 15px;
-    display: flex;
-    gap: 7px;
-  }
-  
-  .card .top-section .icons .social-media .svg {
-    height: 100%;
-    fill: #1b233d;
-  }
-  
-  .card .top-section .icons .social-media .svg:hover {
-    fill: white;
-  }
-  
-  .card .bottom-section {
-    margin-top: 15px;
-    padding: 10px 5px;
-  }
-  
-  .card .bottom-section .title {
-    display: block;
-    font-size: 17px;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-    letter-spacing: 2px;
-  }
-  
-  .card .bottom-section .row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .card .bottom-section .row .item {
-    flex: 30%;
-    text-align: center;
-    padding: 5px;
-    color: rgba(170, 222, 243, 0.721);
-  }
-  
-  .card .bottom-section .row .item .big-text {
-    font-size: 12px;
-    display: block;
-  }
-  
-  .card .bottom-section .row .item .regular-text {
-    font-size: 9px;
-  }
-  
-  .card .bottom-section .row .item:nth-child(2) {
-    border-left: 1px solid rgba(255, 255, 255, 0.126);
-    border-right: 1px solid rgba(255, 255, 255, 0.126);
-  }
-  .angry-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0px;
-    height: 100%;
     align-items: center;
-    padding: 40px;
- }
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    color: aliceblue;
+    
+}
+.button1{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(7,60,155,1) 64%, rgba(0,212,255,1) 91%);
+
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: aliceblue;
+    transition: 0.3s;
+    margin: 0px 10px;
+}
+.background{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(7,60,155,1) 36%, rgba(0,212,255,1) 70%);
+    opacity:0;
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.5s;
+}
+.background:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(7,60,155,1) 36%, rgba(0,212,255,1) 70%);
+    opacity:1;
+    border-radius: 10px;
+    padding: 30px;
+}
+.background h1 {
+    background: linear-gradient(
+        45deg,
+        hsl(240deg 94% 42%) 0%,
+        hsl(222deg 100% 50%) 11%,
+        hsl(214deg 100% 50%) 22%,
+        hsl(207deg 100% 50%) 33%,
+        hsl(201deg 100% 50%) 44%,
+        hsl(196deg 100% 49%) 56%,
+        hsl(181deg 100% 41%) 67%,
+        hsl(161deg 100% 44%) 78%,
+        hsl(144deg 100% 47%) 89%,
+        hsl(117deg 100% 50%) 100%
+      );
+      /* You can add additional styles here if needed */
+      color: white; /* Set text color to contrast with the gradient */
+      padding: 20px; /* Add padding or other styles as desired */
+      border-radius: 30px;
+}
+.background p{
+    color: white;
+    font-size: 20px;
+}
+.button1:hover{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(7,60,155,1) 64%, rgba(0,212,255,1) 91%);
+
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: aliceblue;
+    scale: 1.1;
+}
+.button1:active{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(7,60,155,1) 64%, rgba(0,212,255,1) 91%);
+
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: aliceblue;
+    scale: 0.9;
+}
+.button2{
+    background-image: linear-gradient(
+  45deg,
+  hsl(123deg 91% 65%) 0%,
+  hsl(121deg 90% 69%) 10%,
+  hsl(119deg 89% 73%) 20%,
+  hsl(118deg 87% 76%) 30%,
+  hsl(118deg 85% 78%) 40%,
+  hsl(117deg 81% 81%) 50%,
+  hsl(108deg 76% 76%) 60%,
+  hsl(100deg 72% 70%) 70%,
+  hsl(93deg 70% 64%) 80%,
+  hsl(86deg 68% 57%) 90%,
+  hsl(80deg 70% 49%) 100%
+);
+border-radius: 10px;
+width: 100px;
+height: 30px;
+font-size: 15px;
+}
+.button3{
+position: relative;
+left: 48%;
+width: 100px;
+height: 30px;
+margin: 10px;
+
+}
+
+.voltage-button {
+    position: relative;
+    left: 43%;
+  }
+  
+  .voltage-button button {
+    color: white;
+    background: #0D1127;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5rem;
+    border: 5px solid #5978F3;
+    font-size: 1.2rem;
+    line-height: 1em;
+    letter-spacing: 0.075em;
+    transition: background 0.3s;
+  }
+  
+  .voltage-button button:hover {
+    cursor: pointer;
+    background: #0F1C53;
+  }
+  
+  .voltage-button button:hover + svg, .voltage-button button:hover + svg + .dots {
+    opacity: 1;
+  }
+  
+  .voltage-button svg {
+    display: block;
+    position: absolute;
+    top: -0.75em;
+    left: -650px;
+    width: calc(100% + 0.5em);
+    height: calc(100% + 1.5em);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    transition-delay: 0.1s;
+  }
+  
+  .voltage-button svg path {
+    stroke-dasharray: 100;
+    filter: url("#glow");
+  }
+  
+  .voltage-button svg path.line-1 {
+    stroke: #f6de8d;
+    stroke-dashoffset: 0;
+    animation: spark-1 3s linear infinite;
+  }
+  
+  .voltage-button svg path.line-2 {
+    stroke: #6bfeff;
+    stroke-dashoffset: 500;
+    animation: spark-2 3s linear infinite;
+  }
+  
+  .voltage-button .dots {
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition-delay: 0.4s;
+  }
+  
+  .voltage-button .dots .dot {
+    width: 1rem;
+    height: 1rem;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .voltage-button .dots .dot-1 {
+    top: 0;
+    left: 20%;
+    animation: fly-up 3s linear infinite;
+  }
+  
+  .voltage-button .dots .dot-2 {
+    top: 0;
+    left: 55%;
+    animation: fly-up 3s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .voltage-button .dots .dot-3 {
+    top: 0;
+    left: 80%;
+    animation: fly-up 3s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  .voltage-button .dots .dot-4 {
+    bottom: 0;
+    left: 30%;
+    animation: fly-down 3s linear infinite;
+    animation-delay: 2.5s;
+  }
+  
+  .voltage-button .dots .dot-5 {
+    bottom: 0;
+    left: 65%;
+    animation: fly-down 3s linear infinite;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes spark-1 {
+    to {
+      stroke-dashoffset: -1000;
+    }
+  }
+  
+  @keyframes spark-2 {
+    to {
+      stroke-dashoffset: -500;
+    }
+  }
+  
+  @keyframes fly-up {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.2);
+    }
+  
+    5% {
+      opacity: 1;
+      transform: translateY(-1.5rem) scale(0.4);
+    }
+  
+    10%, 100% {
+      opacity: 0;
+      transform: translateY(-3rem) scale(0.2);
+    }
+  }
+  
+  @keyframes fly-down {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.2);
+    }
+  
+    5% {
+      opacity: 1;
+      transform: translateY(1.5rem) scale(0.4);
+    }
+  
+    10%, 100% {
+      opacity: 0;
+      transform: translateY(3rem) scale(0.2);
+    }
+  }
+  
